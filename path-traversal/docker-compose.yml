@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  path-traversal-app:
+    build: .
+    container_name: path-traversal-vuln
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
